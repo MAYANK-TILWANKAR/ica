@@ -9,8 +9,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-gradient-to-r from-sky-100 to-green-200 lg:-my-0 my-60 py-10 ">
-      <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+    <section className=" lg:-my-0 my-60 py-20 ">
+      <div className="px-4 mx-auto sm:px-6 lg:px-8 ">
         <div className="lg:max-w-[1300px] mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
             FAQs
@@ -23,12 +23,10 @@ export default function FAQSection() {
               className={`transition-all duration-500 ease-in-out bg-white lg:-mx-72 sm:mx-8 transform   ${
                 openQuestion === index ? "scale-105 shadow-lg" : ""
               }`}
-              onClick={() => toggleQuestion(index)}
-            >
+              onClick={() => toggleQuestion(index)}>
               <button
                 type="button"
-                className="flex items-center justify-between w-full   px-4 py-5 sm:p-6"
-              >
+                className="flex items-center justify-between w-full   px-4 py-5 sm:p-6">
                 <span className="flex text-lg font-semibold text-black">
                   {faq.question}
                 </span>
@@ -39,8 +37,7 @@ export default function FAQSection() {
                   stroke="currentColor"
                   className={`w-6 h-6 text-gray-400 transform transition-transform  ${
                     openQuestion === index ? "rotate-180" : "rotate-0"
-                  }`}
-                >
+                  }`}>
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -54,8 +51,7 @@ export default function FAQSection() {
                   maxHeight: openQuestion === index ? "300px" : "0",
                   opacity: openQuestion === index ? 1 : 0,
                 }}
-                className="overflow-hidden transition-all duration-500 ease-in-out px-4 sm:px-6"
-              >
+                className="overflow-hidden transition-all duration-500 ease-in-out px-4 sm:px-6">
                 <p>{faq.answer}</p>
               </div>
             </div>
@@ -74,14 +70,14 @@ export default function FAQSection() {
 
 const faqData = [
   {
-    question: "How can I get started?",
+    question: "1. Is there any additional charge other than the course fee?",
     answer:
-      "Getting started is easy! Sign up for an account, and you'll have access to our platform's features. No credit card required for the initial signup.",
+      "No! No more burning hole in the pocket. There is no hidden charge.",
   },
   {
-    question: "What is the pricing structure?",
+    question: "2. How Ira Edu-Tech will help me to get jobs?",
     answer:
-      "Our pricing structure is flexible. We offer both free and paid plans. You can choose the one that suits your needs and budget.",
+      "Free training of professional skills will be given that will help you to acquire job.",
   },
   {
     question: "What kind of support do you provide?",

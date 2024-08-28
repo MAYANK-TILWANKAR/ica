@@ -12,16 +12,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LandingPage = () => {
   return (
-    <>
+    <div className="bg-green-800/30">
       <Home />
       <div id="why-section">
         <Why />
       </div>
-      <FAQSection />
+
       <Last />
       <FixedBar />
       <div class="flex items-center justify-center min-h-screen ">
-        <div class="px-10 py-10 bg-green-800/20 text-black rounded-[2rem] lg:max-w-[1300px] ">
+        <div class="px-10 py-10  text-black rounded-[2rem] lg:max-w-[1300px] ">
           <h2 class="text-5xl font-bold text-center ">
             WHAT IF <br />I TOLD YOU...
             <span role="img" aria-label="thinking-face">
@@ -51,8 +51,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center min-h-screen bg-gray-50">
-        <div className="w-full lg:max-w-[1300px] px-8 py-10 bg-white rounded-2xl shadow-lg">
+      <div className="flex items-center justify-center min-h-screen ">
+        <div className="w-full lg:max-w-[1300px] px-8 py-10  ">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Who is this workshop for?
             <span role="img" aria-label="thinking-face">
@@ -100,22 +100,20 @@ const LandingPage = () => {
           </div>
 
           <div className="flex justify-center mt-8">
-            <button className="bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+            <button className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
               Become MS Excel Expert Now At ₹4000/-
             </button>
           </div>
         </div>
       </div>
-      <div className="bg-blue-50 py-28">
+      <div className="py-10">
         <div className="lg:max-w-[1300px] mx-auto flex flex-col items-center text-center md:text-left">
           <div className="md:w-2/3 mt-10 md:mt-0 md:ml-12">
-            <h2 className="text-4xl font-bold text-gray-800">
-              Meet your trainer
-            </h2>
-            <h3 className="text-3xl font-light text-gray-600 mt-3">
+            <h2 className="text-4xl font-bold text-black">Meet your trainer</h2>
+            <h3 className="text-3xl font-light text-black mt-3">
               Deepesh Khokale Sir
             </h3>
-            <p className="mt-6 text-lg text-gray-700 leading-relaxed">
+            <p className="mt-6 text-lg text-black leading-relaxed">
               For over 6 years, I have been running a successful education
               institute where I teach Basic Computer Courses, Advanced Excel,
               and Tally Prime with GST. With a strong focus on quality
@@ -136,25 +134,25 @@ const LandingPage = () => {
         </div>
 
         <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-          <div className="bg-green-200 p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <p className="text-2xl font-semibold text-gray-800">6+</p>
             <p className="text-gray-700 mt-2">Courses</p>
           </div>
-          <div className="bg-green-200 p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <p className="text-2xl font-semibold text-gray-800">100+</p>
             <p className="text-gray-700 mt-2">Students Placed</p>
           </div>
-          <div className="bg-green-200 p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white p-6 text-center rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <p className="text-2xl font-semibold text-gray-800">6+</p>
             <p className="text-gray-700 mt-2">Years of Experience</p>
           </div>
         </div>
       </div>
 
-      <section className="py-16  bg-white">
+      <section className="py-16">
         <div className="lg:max-w-[1300px] mx-auto text-center">
           <h2 className="text-5xl font-semibold text-gray-900 mb-12">
-            Do you Know?{" "}
+            Do you Know?
             <span role="img" aria-label="thinking">
               🫨
             </span>
@@ -242,7 +240,7 @@ const LandingPage = () => {
               </p>
             </div>
 
-            <div className="border-2 border-dashed border-blue-300 p-2 rounded-lg flex flex-col items-center ">
+            <div className="border-2 border-dashed hover:border-blue-300 hover:border-solid border-blue-300 p-2 rounded-lg flex flex-col items-center ">
               <div className="flex space-x-60">
                 <h3 className="text-[50px] font-monserrat font-extrabold mr-28  text-blue-600 mb-2">
                   90%
@@ -317,7 +315,7 @@ const LandingPage = () => {
               </p>
             </div>
 
-            <div className="border-2 py-8  border-dashed border-blue-300 rounded-lg flex flex-col items-center sm:col-span-2">
+            <div className="border-2 py-8 border-dashed hover:border-blue-300 hover:border-solid border-blue-300 rounded-lg flex flex-col items-center sm:col-span-2">
               <div className="flex space-x-[1000px]">
                 <h3 className="text-[50px] font-extrabold text-blue-600 mb-2">
                   JOBS
@@ -402,12 +400,11 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-      <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <section class="py-10  sm:py-16 lg:py-24">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-5xl">
-              Trusted by <span class="text-blue-600">30k+</span> world class
-              companies & design teams
+          <div class="lg:max-w-[1300px] mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-800 sm:text-4xl lg:text-4xl">
+              Still thinking whether this course will benefit you or not?
             </h2>
           </div>
 
@@ -417,7 +414,7 @@ const LandingPage = () => {
                 <div class="relative w-24 h-24 mx-auto">
                   <img
                     class="relative object-cover w-24 h-24 mx-auto rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-1.jpg"
+                    src="/images/testi1.png"
                     alt=""
                   />
                   <div class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
@@ -432,17 +429,15 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    “Amet minim mollit non deserunt ullam co est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat”
+                    "The Advanced Excel course was highly valuable. It covered
+                    pivot tables, macros, and complex formulas, boosting my
+                    confidence in using Excel for advanced tasks."
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
-                  Jenny Wilson
+                  Anush Jain
                 </p>
-                <p class="mt-1 text-base text-gray-600">
-                  Project Manager at Microsoft
-                </p>
+                <p class="mt-1 text-base text-gray-600">Student</p>
               </div>
             </div>
 
@@ -451,7 +446,7 @@ const LandingPage = () => {
                 <div class="relative w-24 h-24 mx-auto">
                   <img
                     class="relative object-cover w-24 h-24 mx-auto rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-2.jpg"
+                    src="/images/testi2.png"
                     alt=""
                   />
                   <div class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
@@ -466,15 +461,15 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    “Amet minim mollit non deserunt ullam co est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat”
+                    "This course was excellent for mastering advanced Excel
+                    features like data visualization and complex
+                    problem-solving. It was concise yet very effective."
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
-                  Robert Fox
+                  Sujal Pandiya
                 </p>
-                <p class="mt-1 text-base text-gray-600">Founder at Brain.co</p>
+                <p class="mt-1 text-base text-gray-600">Student</p>
               </div>
             </div>
 
@@ -483,7 +478,7 @@ const LandingPage = () => {
                 <div class="relative w-24 h-24 mx-auto">
                   <img
                     class="relative object-cover w-24 h-24 mx-auto rounded-full"
-                    src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-3.jpg"
+                    src="/images/testi3.png"
                     alt=""
                   />
                   <div class="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
@@ -498,23 +493,22 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    “Amet minim mollit non deserunt ullam co est sit aliqua
-                    dolor do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat”
+                    "The Advanced Excel course was extremely beneficial. It
+                    taught me advanced functions, data analysis greatly
+                    enhancing my Excel skills and efficiency."
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
-                  Kristin Watson
+                  Ayushi Jain
                 </p>
-                <p class="mt-1 text-base text-gray-600">
-                  UX Designer at Google
-                </p>
+                <p class="mt-1 text-base text-gray-600">Student</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+      <FAQSection />
+    </div>
   );
 };
 

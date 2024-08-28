@@ -3,7 +3,7 @@ import React from "react";
 const home = () => {
   return (
     <>
-      <div className="bg-green-800/20 min-h-screen flex items-center py-4 md:py-18">
+      <div className=" min-h-screen flex items-center py-4 md:py-18">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8 leading-tight">
             Master Advanced Data Analytics with MS Excel

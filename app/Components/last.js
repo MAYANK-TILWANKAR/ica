@@ -3,7 +3,7 @@ import React from "react";
 const last = () => {
   return (
     <>
-      <div class="bg-green-800/30 my-5 text-center py-8 md:py-20  px-4 md:px-0">
+      <div class=" my-5 text-center py-8 md:py-36 px-4 md:px-0">
         <h1 class="text-xl sm:text-2xl md:text-4xl font-bold text-gray-800">
           WE HOPE NOW YOU ARE READY TO GO ON THIS
         </h1>
