@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-
+import MakePaymentComponent from "./Components/MakePaymentComponent";
 import FAQSection from "./Components/faq";
 import Home from "./Components/home";
 import Why from "./Components/why";
@@ -17,6 +17,7 @@ const LandingPage = () => {
       <div id="why-section">
         <Why />
       </div>
+      <MakePaymentComponent />
 
       <Last />
       <FixedBar />
@@ -100,6 +101,7 @@ const LandingPage = () => {
           </div>
 
           <div className="flex justify-center mt-8">
+
             <button className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
               Become MS Excel Expert Now At ₹4000/-
             </button>
