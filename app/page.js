@@ -3,57 +3,104 @@
 import React from "react";
 import MakePaymentComponent from "./Components/MakePaymentComponent";
 import FAQSection from "./Components/faq";
-import Home from "./Components/home";
+
 import Why from "./Components/why";
-import Last from "./Components/last";
+
 import FixedBar from "./Components/fixedBar";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LandingPage = () => {
   return (
-    <div className="bg-green-800/30">
-      <Home />
-      <div id="why-section">
-        <Why />
+    <div className="bg-green-800/30 ">
+      <div className="min-h-screen flex flex-col items-center py-4 md:py-18">
+        <div className="container mx-auto px-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8 leading-tight">
+            Master Advanced Data Analytics with MS Excel
+          </h1>
+          <p className="text-base md:text-lg lg:text-xl text-center text-gray-700 mb-6 md:mb-8">
+            Analyze complex data, build interactive dashboards, create detailed
+            reports, and save up to 2 hours of time every day – no prior
+            knowledge required!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="transform transition duration-300">
+              <img
+                className="object-cover w-full h-auto rounded-lg"
+                src="/images/first.png"
+                alt="Data Analytics"
+              />
+            </div>
+            <div className="transform transition duration-300">
+              <img
+                className="object-cover w-full h-auto rounded-lg"
+                src="/images/second.png"
+                alt="Dashboard"
+              />
+            </div>
+          </div>
+          <div className="text-center mt-8 md:mt-10">
+            <a
+              href="#_"
+              className="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-medium tracking-tighter text-white bg-blue-800 group">
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-700 hover:text-black group-hover:w-full group-hover:h-full"></span>
+              <span className="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-green-700"></span>
+              <div className="relative text-xl">
+                <MakePaymentComponent name="Become MS Excel Expert Now At ₹4000/-" />
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-      <MakePaymentComponent />
 
-      <Last />
-      <FixedBar />
-      <div class="flex items-center justify-center min-h-screen ">
-        <div class="px-10 py-10  text-black rounded-[2rem] lg:max-w-[1300px] ">
-          <h2 class="text-5xl font-bold text-center ">
+      <div className="-my-20 md:my-5 text-center py-32   md:py-52 px-4 md:px-0">
+        <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-gray-800">
+          WE HOPE NOW YOU ARE READY TO GO ON THIS
+        </h1>
+        <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-extrabold text-white mt-2">
+          CAREER CHANGING RIDE
+        </h2>
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mt-4">
+          SEE YOU INSIDE THE BATCH{" "}
+          <span className="text-lg sm:text-xl">😊</span>
+        </p>
+
+        <div className="mt-6 inline-block bg-green-500 hover:bg-blue-600 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 text-sm sm:text-lg rounded-full">
+          <MakePaymentComponent name="Become MS Excel Expert Now At ₹4000/-" />
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center -my-48 md:-my-0 min-h-screen px-4 md:px-10">
+        <div class="px-6 py-10 md:px-10 text-black rounded-2xl lg:max-w-[1300px] bg-white shadow-lg">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
             WHAT IF <br />I TOLD YOU...
             <span role="img" aria-label="thinking-face">
               🤔
             </span>
           </h2>
-          <p class="text-center mt-4 text-lg ">
-            You Can Master Advance MS Excel and Can Make High-Quality Reports
-            and Analyzing Data On Your Finger Tips
+          <p class="text-center mt-4 text-base sm:text-lg">
+            You Can Master Advanced MS Excel and Make High-Quality Reports and
+            Analyze Data at Your Fingertips
             <br />
             without paying for any expensive tools or software
           </p>
-          <h3 class="text-3xl text-center mt-6 font-semibold ">
+          <h3 class="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 font-semibold">
             Yes, It's Super Easy!!
             <span role="img" aria-label="hand-gesture">
               ✌🏻
             </span>
           </h3>
-          <p class="text-center mt-2 mr-5 text-base font-medium ">
+          <p class="text-center mt-2 text-sm sm:text-base font-medium">
             NO Coding....NO Experience Required!
           </p>
 
-          <div class="flex justify-center mt-4">
-            <button class="bg-green-400 text-white text-xl font-bold py-5 px-8 hover:scale-110 transition-all duration-300">
-              Become MS Excel Expert Now At ₹4000/-
-            </button>
+          <div class="flex justify-center mt-6">
+            <div class="bg-green-400 text-white text-base sm:text-lg lg:text-xl font-bold py-3 px-6 sm:py-4 sm:px-8 hover:scale-110 transition-all duration-300 rounded-full">
+              <MakePaymentComponent name="Become MS Excel Expert Now At ₹4000/-" />
+            </div>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center min-h-screen ">
-        <div className="w-full lg:max-w-[1300px] px-8 py-10  ">
+        <div className="w-full lg:max-w-[1300px] px-8 py-48   ">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
             Who is this workshop for?
             <span role="img" aria-label="thinking-face">
@@ -101,14 +148,13 @@ const LandingPage = () => {
           </div>
 
           <div className="flex justify-center mt-8">
-
-            <button className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
-              Become MS Excel Expert Now At ₹4000/-
-            </button>
+            <div className="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+              <MakePaymentComponent name="Become MS Excel Expert Now At ₹4000/-" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="py-10">
+      <div className="-my-32 md:-my-10 mx-8 ">
         <div className="lg:max-w-[1300px] mx-auto flex flex-col items-center text-center md:text-left">
           <div className="md:w-2/3 mt-10 md:mt-0 md:ml-12">
             <h2 className="text-4xl font-bold text-black">Meet your trainer</h2>
@@ -151,9 +197,9 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <section className="py-16">
+      <section className="py-64 px-10">
         <div className="lg:max-w-[1300px] mx-auto text-center">
-          <h2 className="text-5xl font-semibold text-gray-900 mb-12">
+          <h2 className="md:text-5xl text-4xl  font-semibold text-gray-900 mb-12">
             Do you Know?
             <span role="img" aria-label="thinking">
               🫨
@@ -161,8 +207,8 @@ const LandingPage = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div className="border-2 border-dashed hover:border-blue-300 hover:border-solid border-blue-300 p-2 rounded-lg flex flex-col items-center sm:col-span-1">
-              <div className="flex  space-x-16 ">
-                <h3 className="text-[50px] font-monserrat font-extrabold text-blue-600 mb-2">
+              <div className="flex  md:space-x-16 space-x-16 ">
+                <h3 className="md:text-[50px] text-[25px]  font-monserrat font-extrabold text-blue-600 md:mb-2 mt-2 ">
                   15K TO 2 LAKH
                 </h3>
                 <svg
@@ -243,8 +289,8 @@ const LandingPage = () => {
             </div>
 
             <div className="border-2 border-dashed hover:border-blue-300 hover:border-solid border-blue-300 p-2 rounded-lg flex flex-col items-center ">
-              <div className="flex space-x-60">
-                <h3 className="text-[50px] font-monserrat font-extrabold mr-28  text-blue-600 mb-2">
+              <div className="flex md:space-x-60 mt-4 md:mt-0">
+                <h3 className="md:text-[50px] text-[30px] font-monserrat font-extrabold mr-28  text-blue-600 mb-2">
                   90%
                 </h3>
                 <svg
@@ -318,8 +364,8 @@ const LandingPage = () => {
             </div>
 
             <div className="border-2 py-8 border-dashed hover:border-blue-300 hover:border-solid border-blue-300 rounded-lg flex flex-col items-center sm:col-span-2">
-              <div className="flex space-x-[1000px]">
-                <h3 className="text-[50px] font-extrabold text-blue-600 mb-2">
+              <div className="flex md:space-x-[1000px] space-x-[120px] ">
+                <h3 className="md:text-[50px] text-[25px] font-extrabold text-blue-600 mb-2">
                   JOBS
                 </h3>
                 <svg
@@ -509,7 +555,12 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      <div id="why-section">
+        <Why />
+      </div>
+
       <FAQSection />
+      <FixedBar />
     </div>
   );
 };

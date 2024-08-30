@@ -1,9 +1,9 @@
 // app/components/MakePaymentComponent.js
 "use client"; // Mark this component as a client component
 
-import React from 'react';
+import React from "react";
 
-const MakePaymentComponent = () => {
+const MakePaymentComponent = (props) => {
   const makePayment = async () => {
     try {
       const res = await initializeRazorpay();
@@ -16,10 +16,10 @@ const MakePaymentComponent = () => {
       const data = await fetch("/api/razorpay", {
         method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          taxAmt: 100,
+          taxAmt: 4000,
         }),
       }).then((t) => t.json());
 
@@ -30,7 +30,7 @@ const MakePaymentComponent = () => {
 
       var options = {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY, // Use Razorpay key from environment variables
-        name: "Indradhanu.online",
+        name: "Excel",
         currency: data.currency,
         amount: data.amount,
         order_id: data.id,
@@ -42,7 +42,7 @@ const MakePaymentComponent = () => {
         prefill: {
           name: "pradeep das",
           email: "admin@indradhanu.online",
-          contact: '9853785519'
+          contact: "9853785519",
         },
       };
 
@@ -68,9 +68,9 @@ const MakePaymentComponent = () => {
   };
 
   return (
-    <div>
-      <button onClick={makePayment}>Pay 100 now</button>
-    </div>
+    <button onClick={makePayment}>
+    {props.name}
+    </button>
   );
 };
 

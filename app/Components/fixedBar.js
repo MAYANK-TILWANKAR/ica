@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MakePaymentComponent from "./MakePaymentComponent";
 
 const FixedBar = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,11 +36,9 @@ const FixedBar = () => {
       <div>
         <p className="text-blue-600 text-lg font-semibold">Price:4000/-</p>
       </div>
-      <a
-        href="#"
-        className="bg-gradient-to-r from-green-400 to-green-600 text-white font-bold py-2 px-4 rounded-md">
-        Register now
-      </a>
+      <div className="bg-gradient-to-r from-green-400 to-green-600 text-white font-bold py-2 px-4 rounded-md">
+        <MakePaymentComponent name="Register Now" />
+      </div>
     </div>
   );
 };
