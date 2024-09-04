@@ -21,19 +21,12 @@ const LandingPage = () => {
             reports, and save up to 2 hours of time every day – no prior
             knowledge required!
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="transform transition duration-300">
+          <div>
+            <div className="transform transition duration-300 justify-center flex">
               <img
-                className="object-cover w-full h-auto rounded-lg"
-                src="/images/first.png"
+                className="object-cover w-[600px] h-auto rounded-lg "
+                src="/images/first.jpg"
                 alt="Data Analytics"
-              />
-            </div>
-            <div className="transform transition duration-300">
-              <img
-                className="object-cover w-full h-auto rounded-lg"
-                src="/images/second.png"
-                alt="Dashboard"
               />
             </div>
           </div>
