@@ -83,7 +83,7 @@ const LandingPage = () => {
             without paying for any expensive tools or software
           </p>
           <h3 class="text-2xl sm:text-3xl lg:text-4xl text-center mt-6 font-semibold">
-            Yes, It's Super Easy!!
+            Yes, Its Super Easy!!
             <span role="img" aria-label="hand-gesture">
               ✌🏻
             </span>
@@ -477,9 +477,9 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    "The Advanced Excel course was highly valuable. It covered
-                    pivot tables, macros, and complex formulas, boosting my
-                    confidence in using Excel for advanced tasks."
+                    &quot;The Advanced Excel course was highly valuable. It
+                    covered pivot tables, macros, and complex formulas, boosting
+                    my confidence in using Excel for advanced tasks.&quot;
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
@@ -509,9 +509,9 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    "This course was excellent for mastering advanced Excel
+                    &quot;This course was excellent for mastering advanced Excel
                     features like data visualization and complex
-                    problem-solving. It was concise yet very effective."
+                    problem-solving. It was concise yet very effective.&quot;
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
@@ -541,9 +541,9 @@ const LandingPage = () => {
                 </div>
                 <blockquote class="mt-7">
                   <p class="text-lg text-black">
-                    "The Advanced Excel course was extremely beneficial. It
+                    &quot;The Advanced Excel course was extremely beneficial. It
                     taught me advanced functions, data analysis greatly
-                    enhancing my Excel skills and efficiency."
+                    enhancing my Excel skills and efficiency.&quot;
                   </p>
                 </blockquote>
                 <p class="text-base font-semibold tex-tblack mt-9">
