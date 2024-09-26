@@ -5,7 +5,7 @@ import MakePaymentComponent from "./Components/MakePaymentComponent";
 import FAQSection from "./Components/faq";
 
 import Why from "./Components/why";
-
+import One from "./Components/one";
 import FixedBar from "./Components/fixedBar";
 
 const LandingPage = () => {
@@ -44,22 +44,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className="-my-20 md:my-5 text-center py-32   md:py-52 px-4 md:px-0">
-        <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold text-gray-800">
-          WE HOPE NOW YOU ARE READY TO GO ON THIS
-        </h1>
-        <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-extrabold text-white mt-2">
-          CAREER CHANGING RIDE
-        </h2>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mt-4">
-          SEE YOU INSIDE THE BATCH{" "}
-          <span className="text-lg sm:text-xl">😊</span>
-        </p>
-
-        <div className="mt-6 inline-block bg-green-500 hover:bg-blue-600 text-white font-bold py-2 sm:py-3 px-6 sm:px-8 text-sm sm:text-lg rounded-full">
-          <MakePaymentComponent name="Become MS Excel Expert Now At ₹4000/-" />
-        </div>
-      </div>
+      <One />
 
       <div class="flex items-center justify-center -my-48 md:-my-0 min-h-screen px-4 md:px-10">
         <div class="px-6 py-10 md:px-10 text-black rounded-2xl lg:max-w-[1300px] bg-white shadow-lg">

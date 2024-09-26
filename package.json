@@ -19,7 +19,8 @@
     "react": "^18",
     "react-dom": "^18",
     "shortid": "^2.2.16",
-    "tw-elements": "^2.0.0"
+    "tw-elements": "^2.0.0",
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "eslint": "^8",
