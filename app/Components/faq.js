@@ -58,9 +58,9 @@ export default function FAQSection() {
           ))}
         </div>
         <p className="text-center text-gray-600 text-base mt-9">
-          Still have questions?
-          <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover-underline">
-            Contact our support
+          Still have questions?{" "}
+          <span className="cursor-pointer font-medium text-tertiary transition-all duration-200 hover:text-tertiary focus:text-tertiary hover:underline">
+            <a href="#enquiry">Contact our support</a>{" "}
           </span>
         </p>
       </div>
@@ -75,9 +75,9 @@ const faqData = [
       "No! No more burning hole in the pocket. There is no hidden charge.",
   },
   {
-    question: "2. How Ira Edu-Tech will help me to get jobs?",
+    question: "2. How ICA Global will help me to get jobs?",
     answer:
-      "Free training of professional skills will be given that will help you to acquire job.",
+      "Our training of professional skills will help you to acquire job & internship opportunities.",
   },
   {
     question: "What kind of support do you provide?",
@@ -85,28 +85,19 @@ const faqData = [
       "We offer comprehensive customer support. You can reach out to our support team through various channels, including email, chat, and a knowledge base.",
   },
   {
-    question: "Can I cancel my subscription anytime?",
+    question: "Can I get some demo classes?",
     answer:
-      "Yes, you can cancel your subscription at any time without any hidden fees. We believe in providing a hassle-free experience for our users.",
+      "Yes, you can get demo classes without any hidden fees. We believe in providing a hassle-free experience for our students.",
   },
   {
     question: "How can I get started?",
     answer:
-      "Getting started is easy! Sign up for an account, and you'll have access to our platform's features. No credit card required for the initial signup.",
+      "Getting started is easy! Fill up the Enquiry form & register for the demo class, you can also directly register & reserve your seat by paying the course fee.",
   },
   {
     question: "What is the pricing structure?",
     answer:
-      "Our pricing structure is flexible. We offer both free and paid plans. You can choose the one that suits your needs and budget.",
-  },
-  {
-    question: "What kind of support do you provide?",
-    answer:
-      "We offer comprehensive customer support. You can reach out to our support team through various channels, including email, chat, and a knowledge base.",
-  },
-  {
-    question: "Can I cancel my subscription anytime?",
-    answer:
-      "Yes, you can cancel your subscription at any time without any hidden fees. We believe in providing a hassle-free experience for our users.",
+      "- The full Course Fee is Rs 4500/- in installments.\n" +
+      "- Lump Sum fee is Rs 4000/-.",
   },
 ];

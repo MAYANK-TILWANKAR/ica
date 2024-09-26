@@ -5,8 +5,9 @@ import MakePaymentComponent from "./Components/MakePaymentComponent";
 import FAQSection from "./Components/faq";
 
 import Why from "./Components/why";
-import One from "./Components/one";
+import One from "./Components/One";
 import FixedBar from "./Components/fixedBar";
+import Enquiry from "./Components/Enquiry";
 
 const LandingPage = () => {
   return (
@@ -47,7 +48,7 @@ const LandingPage = () => {
       <One />
 
       <div class="flex items-center justify-center -my-48 md:-my-0 min-h-screen px-4 md:px-10">
-        <div class="px-6 py-10 md:px-10 text-black rounded-2xl lg:max-w-[1300px] bg-white shadow-lg">
+        <div class="px-6 py-10 md:px-10 text-black rounded-2xl lg:max-w-[1300px] ">
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center">
             WHAT IF <br />I TOLD YOU...
             <span role="img" aria-label="thinking-face">
@@ -535,6 +536,9 @@ const LandingPage = () => {
       </section>
       <div id="why-section">
         <Why />
+      </div>
+      <div id="enquiry">
+        <Enquiry />
       </div>
 
       <FAQSection />

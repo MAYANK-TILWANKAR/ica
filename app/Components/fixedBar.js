@@ -30,15 +30,17 @@ const FixedBar = () => {
 
   return (
     <div
-      className={`fixed bottom-0 w-full bg-green-100 p-4 flex items-center justify-between transition-transform duration-300 ${
+      className={`fixed bottom-0 w-full bg-[#075593]/10 p-4 flex items-center justify-center transition-transform duration-300 ${
         isVisible ? "translate-y-0" : "translate-y-full"
       }`}>
-      <div>
-        <p className="text-blue-600 text-lg font-semibold">Price:4000/-</p>
-      </div>
-      <div className="bg-gradient-to-r from-green-400 to-green-600 text-white font-bold py-2 px-4 rounded-md">
-        <MakePaymentComponent name="Register Now" />
-      </div>
+      <a
+        href="#_"
+        className="rounded-md px-3.5 py-2 m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-black bg-[#EDA915]">
+        <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-[#075593] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
+        <span className="relative  text-black transition duration-300 group-hover:text-white ease">
+          Book Your Demo class now for free
+        </span>
+      </a>
     </div>
   );
 };
