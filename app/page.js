@@ -1,17 +1,19 @@
 "use client";
+import Popup from "./Components/PopUp";
 
 import React from "react";
 import MakePaymentComponent from "./Components/MakePaymentComponent";
-import FAQSection from "./Components/faq";
-
-import Why from "./Components/why";
+import Faq from "./Components/Faq";
+import Vm from "./Components/Vm";
+import Why from "./Components/Why";
 import One from "./Components/One";
-import FixedBar from "./Components/fixedBar";
+import Bar from "./Components/Bar";
 import Enquiry from "./Components/Enquiry";
 
 const LandingPage = () => {
   return (
     <div className="bg-green-800/30 ">
+      <Popup />
       <div className="min-h-screen flex flex-col items-center py-4 md:py-18">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-6 md:mb-8 leading-tight">
@@ -175,7 +177,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-
+      <Vm />
       <section className="py-64 px-10">
         <div className="lg:max-w-[1300px] mx-auto text-center">
           <h2 className="md:text-5xl text-4xl  font-semibold text-gray-900 mb-12">
@@ -541,8 +543,8 @@ const LandingPage = () => {
         <Enquiry />
       </div>
 
-      <FAQSection />
-      <FixedBar />
+      <Faq />
+      <Bar />
     </div>
   );
 };
